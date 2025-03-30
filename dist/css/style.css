@@ -164,6 +164,69 @@ footer article p a:hover {
   background-color: #343a3f;
 }
 
+.projetos {
+  margin: 3rem;
+  text-align: center;
+}
+.projetos .texts {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  max-width: 40%;
+  margin: 0 auto;
+}
+.projetos .texts .projects-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 1rem 0;
+}
+.projetos .texts .projects-subtitle {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.projetos .texts .projects-description {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  line-height: 1.5rem;
+}
+.projetos .projects {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 5rem;
+  padding-bottom: 9rem;
+}
+.projetos .projects .project-item {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  align-items: center;
+}
+.projetos .projects .project-item .title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.projetos .projects .project-item .info {
+  padding-top: 1rem;
+  text-align: center;
+}
+.projetos a {
+  color: #000;
+  text-decoration: none;
+  padding: 1rem;
+  align-items: center;
+  align-self: center;
+}
+.projetos a:last-child::after {
+  content: ">";
+  padding-left: 0.34rem;
+  font-weight: bold;
+}
+.projetos .border {
+  border: 1px solid #000;
+  border-radius: 0.3rem;
+}
+
 .home {
   text-align: center;
   display: flex;

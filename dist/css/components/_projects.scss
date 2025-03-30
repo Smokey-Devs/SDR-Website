@@ -1,0 +1,74 @@
+.projetos {
+    margin: 3rem;
+    text-align: center;
+
+    .texts {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        max-width: 40%;
+        margin: 0 auto;
+
+        .projects-title {
+            font-size: 3rem;
+            font-weight: bold;
+            margin: 1rem 0;
+        }
+
+        .projects-subtitle {
+            font-size: 1.6rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+
+        .projects-description {
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+            line-height: 1.5rem;
+
+        }
+
+    }
+
+    .projects {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 5rem;
+        padding-bottom: 9rem;
+        .project-item {
+            display: flex;
+            flex-direction: column;
+            width: 30%;
+            align-items: center;
+
+            .title {
+                font-size: 1.2rem;
+                font-weight: bold;
+            }
+
+            .info {
+                padding-top: 1rem;
+                text-align: center;
+            }
+        }
+    }
+
+    a {
+        color: #000;
+        text-decoration: none;
+        padding: 1rem;
+        align-items: center;
+        align-self: center;
+        &:last-child::after {
+            content: ">";
+            padding-left: .34rem;
+            font-weight: bold;
+        }
+    }
+
+    
+    .border {
+        border: 1px solid #000;
+        border-radius: .3rem;
+    }
+}
