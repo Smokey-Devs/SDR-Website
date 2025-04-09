@@ -1,0 +1,48 @@
+.infos {
+    display: flex;
+    justify-content: space-between;
+    margin: 7rem;
+    flex-wrap: wrap;
+    .infos-title {
+        width: 35rem;
+        font-weight: bold;
+        font-size: 2rem;
+    }
+    .infos-subtitle {
+        width: 38rem;
+        font-size: 1.2rem;
+    }
+    .infosUl {
+        padding-top: 5rem;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        .infos-item {
+            h3 {
+                font-weight: bold;
+                padding-bottom: 2rem;
+                width: 20rem;
+                font-size: 1.2rem;
+            }
+            p {
+                width: 20rem;
+                padding-bottom: 2rem;
+            }
+            a {
+                color: #000;
+                text-decoration: none;
+                transition: 0.2s ease;
+                &::after {
+                    content: '>';
+                    padding-left: .7rem;
+                    font-weight: bold;
+                    color: #000;
+
+                }
+                &:hover {
+                    color: #8b8b8b
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,14 @@
+.team {
+    display: flex;
+    justify-content: center;   
+    align-content: center;
+    flex-wrap: wrap;
+    .logoCorserius {
+        width: 15rem;
+    }
+    .frase {
+        font-weight: bold;
+        font-size: 1.2rem;
+        width: 20rem;
+    }
+}
