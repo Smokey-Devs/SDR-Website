@@ -364,13 +364,30 @@ footer article p a:hover {
   align-items: center;
   flex-wrap: wrap;
   flex-direction: column;
+  background: #f0f0f0;
 }
 .team .logoCorserius {
   width: 15rem;
 }
 .team .frase {
   font-weight: bold;
-  font-size: 1.2rem;
-  width: 38rem;
+  font-size: 1.7rem;
+  width: 50rem;
   text-align: center;
+}
+.team .teamTitle {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.team .teamUl {
+  display: flex;
+}
+.team .teamCard {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 5rem;
+}
+.team .teamCard .teamNome {
+  font-weight: 600;
 }/*# sourceMappingURL=style.css.map */
