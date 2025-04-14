@@ -1,6 +1,9 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lugrasimo&display=swap");
+* {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -152,8 +155,7 @@ footer article p a:hover {
   justify-content: space-between;
   width: 100%;
 }
-.header .nav .nav-list,
-.header .nav .acess {
+.header .nav .nav-list {
   display: flex;
   align-items: center;
   list-style: none;
@@ -162,11 +164,6 @@ footer article p a:hover {
 }
 .header .nav .nav-item {
   padding-right: 1.2rem;
-}
-.header .nav .nav-item:last-child::after {
-  content: "⮟";
-  font-size: 0.8rem;
-  margin-left: 0.5rem;
 }
 .header .nav .nav-item a {
   text-decoration: none;
@@ -201,8 +198,9 @@ footer article p a:hover {
 }
 
 .projetos {
-  margin: 3rem;
+  padding: 3rem;
   text-align: center;
+  border-bottom: 1px #000 solid;
 }
 .projetos .texts {
   display: flex;
