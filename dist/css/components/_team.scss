@@ -23,14 +23,30 @@
     }
 
     .teamUl {
-        display: flex;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
     }
+
+        .teamImg{
+            width: 13rem;
+            height: 18rem;
+            margin-bottom: 1rem;
+        }
 
         .teamCard {
             display: flex;
             align-items: center;
+            justify-content: center;
             flex-direction: column;
-            margin: 5rem;
+            margin: 4rem;
+
+            .teamDesc{
+                margin-top: 0.5rem;
+                text-align: center;
+                font-size: 1rem;
+                width: 20rem;
+            }
 
             .teamNome {
                 font-weight: 600;
