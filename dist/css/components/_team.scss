@@ -22,9 +22,11 @@
     }
 
     .teamUl {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 2rem;
+        justify-content: center;
+        gap: 2rem;
     }
 
         .teamImg{
@@ -38,7 +40,9 @@
             align-items: center;
             justify-content: center;
             flex-direction: column;
-            margin: 4rem;
+            margin: 1rem;
+            min-height: 30rem;
+            min-height: 10rem;
 
             .teamDesc{
                 margin-top: 0.5rem;

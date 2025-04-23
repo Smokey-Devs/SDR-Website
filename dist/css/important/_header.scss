@@ -13,7 +13,7 @@
     .nav {
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: space-around;
         width: 100%;
 
         .nav-list {
@@ -22,6 +22,7 @@
             list-style: none;
             margin: 0;
             padding: 2rem;
+            gap: 4rem;
         }
 
         .nav-item {
@@ -68,5 +69,48 @@
                 }
             }
         }
+    }
+}
+
+.butao {
+    width: 4rem;
+    height: 2rem;
+    border: 2px solid #000;
+    border-radius: 3rem;
+    position: relative;
+    background: #000;
+    cursor: pointer;
+    
+    transition: 0.2s ease-in;
+    
+}
+
+.disable {
+    &::before{
+        content: '';
+        width: 1.7rem;
+        height: 1.7rem;
+        bottom: 2.5px;
+        left: 2px;
+        border-radius: 2rem;
+        background: #ffffff;
+        position: absolute;
+
+    }
+}
+
+.active {
+    transition: 0.2s ease-in;
+    background: #fff;
+    &::before{
+        content: '';
+        width: 1.7rem;
+        height: 1.7rem;
+        bottom: 2.5px;
+        right: 2px;
+        border-radius: 2rem;
+        background: #000000;
+        position: absolute;
+
     }
 }

@@ -156,7 +156,7 @@ footer article p a:hover {
 .header .nav {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 100%;
 }
 .header .nav .nav-list {
@@ -165,6 +165,7 @@ footer article p a:hover {
   list-style: none;
   margin: 0;
   padding: 2rem;
+  gap: 4rem;
 }
 .header .nav .nav-item {
   padding-right: 1.2rem;
@@ -199,6 +200,43 @@ footer article p a:hover {
 }
 .header .nav .acess-item:last-child a:hover {
   background-color: #343a3f;
+}
+
+.butao {
+  width: 4rem;
+  height: 2rem;
+  border: 2px solid #000;
+  border-radius: 3rem;
+  position: relative;
+  background: #000;
+  cursor: pointer;
+  transition: 0.2s ease-in;
+}
+
+.disable::before {
+  content: "";
+  width: 1.7rem;
+  height: 1.7rem;
+  bottom: 2.5px;
+  left: 2px;
+  border-radius: 2rem;
+  background: #ffffff;
+  position: absolute;
+}
+
+.active {
+  transition: 0.2s ease-in;
+  background: #fff;
+}
+.active::before {
+  content: "";
+  width: 1.7rem;
+  height: 1.7rem;
+  bottom: 2.5px;
+  right: 2px;
+  border-radius: 2rem;
+  background: #000000;
+  position: absolute;
 }
 
 .projetos {
@@ -277,13 +315,17 @@ footer article p a:hover {
   display: flex;
   font-size: 5rem;
   color: #204feb;
-  width: 50rem;
+  max-width: 50rem;
+  white-space: pre-wrap;
+  word-wrap: break-word;
 }
 .home .home-description {
-  width: 50rem;
   font-size: 1.3rem;
   padding: 0.3rem;
+  max-width: 50rem;
   color: #ffffff;
+  white-space: pre-wrap;
+  word-wrap: break-word;
 }
 .home .home-description:last-child {
   padding-bottom: 2rem;
@@ -334,6 +376,7 @@ footer article p a:hover {
   display: flex;
   width: 100%;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .infos .infosUl .infos-item h3 {
   font-weight: bold;
@@ -381,9 +424,11 @@ footer article p a:hover {
   font-weight: 700;
 }
 .team .teamUl {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 2rem;
+  justify-content: center;
+  gap: 2rem;
 }
 .team .teamImg {
   width: 13rem;
@@ -395,7 +440,9 @@ footer article p a:hover {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin: 4rem;
+  margin: 1rem;
+  min-height: 30rem;
+  min-height: 10rem;
 }
 .team .teamCard .teamDesc {
   margin-top: 0.5rem;
