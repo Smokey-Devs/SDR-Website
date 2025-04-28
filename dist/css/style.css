@@ -148,8 +148,8 @@ footer article p a:hover {
   align-items: center;
 }
 .header .logo {
-  width: 6rem;
-  height: 3rem;
+  width: 10rem;
+  height: 2rem;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -210,10 +210,9 @@ footer article p a:hover {
   position: relative;
   background: #000;
   cursor: pointer;
-  transition: 0.2s ease-in;
+  transition: 0.5s ease-in;
 }
-
-.disable::before {
+.butao::before {
   content: "";
   width: 1.7rem;
   height: 1.7rem;
@@ -225,7 +224,7 @@ footer article p a:hover {
 }
 
 .active {
-  transition: 0.2s ease-in;
+  transition: 0.5s ease-in;
   background: #fff;
 }
 .active::before {
@@ -233,7 +232,7 @@ footer article p a:hover {
   width: 1.7rem;
   height: 1.7rem;
   bottom: 2.5px;
-  right: 2px;
+  left: 1.6rem;
   border-radius: 2rem;
   background: #000000;
   position: absolute;

@@ -5,8 +5,8 @@
     align-items: center;
 
     .logo {
-        width: 6rem;
-        height: 3rem;
+        width: 10rem;
+        height: 2rem;
         object-fit: cover;
     }
 
@@ -80,12 +80,7 @@
     position: relative;
     background: #000;
     cursor: pointer;
-    
-    transition: 0.2s ease-in;
-    
-}
-
-.disable {
+    transition: 0.5s ease-in;
     &::before{
         content: '';
         width: 1.7rem;
@@ -100,14 +95,14 @@
 }
 
 .active {
-    transition: 0.2s ease-in;
+    transition: 0.5s ease-in;
     background: #fff;
     &::before{
         content: '';
         width: 1.7rem;
         height: 1.7rem;
         bottom: 2.5px;
-        right: 2px;
+        left: 1.6rem;
         border-radius: 2rem;
         background: #000000;
         position: absolute;
