@@ -322,9 +322,9 @@ footer article p a:hover {
 }
 .projetos .projects {
   display: flex;
-  justify-content: space-between;
   padding-top: 5rem;
   padding-bottom: 9rem;
+  justify-content: center;
 }
 .projetos .projects .project-item {
   display: flex;
