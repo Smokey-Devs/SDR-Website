@@ -2,11 +2,13 @@
     display: flex;
     padding: 1rem 2rem;
     align-items: center;
+    flex-wrap: nowrap;
 
     .logo {
-        width: 6rem;
-        height: 3rem;
+        width: 12rem;
+        height: 2rem;
         object-fit: cover;
+        margin-right: 2rem;
     }
 
     .nav {
@@ -29,11 +31,11 @@
 
             a {
                 text-decoration: none;
-                color: #000;
+                color: var(--text-color);
 
                 &:hover {
                     color: #212529;
-                    border-bottom: 1px solid #000;
+                    border-bottom: 1px solid var(--text-color);
                 }
 
             }
@@ -103,7 +105,7 @@
 }
 
 .active .circle {
-    transform: translateX(2.188rem);
+    transform: translateX(1.70rem);
 }
 
 @media screen and (max-width: 768px) {
