@@ -1,6 +1,5 @@
 .header {
     display: flex;
-    border-bottom: 4px solid #e9ecef;
     padding: 1rem 2rem;
     align-items: center;
 
@@ -13,7 +12,7 @@
     .nav {
         display: flex;
         align-items: center;
-        justify-content: space-around;
+        justify-content: space-between;
         width: 100%;
 
         .nav-list {
@@ -72,45 +71,62 @@
     }
 }
 
-.butao {
-    width: 4rem;
-    height: 2rem;
-    border: 2px solid #000;
-    border-radius: 3rem;
+.themeToggle {
+    width: 4.375rem;
+    height: 1.875rem;
+    background-color: #ccc;
+    border-radius: 50px;
     position: relative;
-    background: #000;
     cursor: pointer;
-    
-    transition: 0.2s ease-in;
-    
+    transition: 0.3s ease-in-out;
 }
 
-.disable {
-    &::before{
-        content: '';
-        width: 1.7rem;
-        height: 1.7rem;
-        bottom: 2.5px;
-        left: 2px;
-        border-radius: 2rem;
-        background: #ffffff;
-        position: absolute;
+.circle {
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 0.2rem;
+    left: 0.2rem;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
 
-    }
+.dark-theme {
+    --bg-color: #181818;
+    --text-color: #fff;
 }
 
 .active {
-    transition: 0.2s ease-in;
-    background: #fff;
-    &::before{
-        content: '';
-        width: 1.7rem;
-        height: 1.7rem;
-        bottom: 2.5px;
-        right: 2px;
-        border-radius: 2rem;
-        background: #000000;
-        position: absolute;
+    background-color: #4f4f4f;
+}
 
+.active .circle {
+    transform: translateX(2.188rem);
+}
+
+@media screen and (max-width: 768px) {
+    .header{
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .nav {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+    }
+    .nav-list { 
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 0;
+        padding: 0;
+    }
+    .active .circle {
+        transform: translateX(2.45rem);
     }
 }

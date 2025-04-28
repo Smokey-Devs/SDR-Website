@@ -1,6 +1,6 @@
+const btn = document.querySelector('.themeToggle');
 
-const btn = document.querySelector(".butao");
-
-function mode(){
-    btn.classList.toggle("active");
-}
+btn.addEventListener('click', () => {
+    document.body.classList.toggle('dark-theme');
+    btn.classList.toggle('active');
+});

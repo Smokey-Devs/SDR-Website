@@ -73,13 +73,13 @@ footer {
             }
 
             a {
-                color: #000;
+                color: var(--text-color);
                 font-weight: bold;
                 text-decoration: none;
                 transition: .2s;
 
                 &:hover {
-                    border-bottom: 1px solid #000;
+                    border-bottom: 1px solid var(--text-color);;
                 }
             }
         }
@@ -95,7 +95,7 @@ footer {
         display: flex;
         a {
             padding-left: 1.5rem;
-            color: #000
+            color: var(--text-color);
         }
     }
     ul {
@@ -104,7 +104,7 @@ footer {
             padding-right: 0.6rem;
             font-size: 1.3rem;
             a{
-                color: #000;
+                color: var(--text-color);
             }
         }
     }
