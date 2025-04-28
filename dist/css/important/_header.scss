@@ -3,17 +3,18 @@
     border-bottom: 4px solid #e9ecef;
     padding: 1rem 2rem;
     align-items: center;
+    flex-wrap: nowrap;
 
     .logo {
-        width: 10rem;
+        width: 12rem;
         height: 2rem;
         object-fit: cover;
+        margin-right: 2rem;
     }
 
     .nav {
         display: flex;
         align-items: center;
-        justify-content: space-around;
         width: 100%;
 
         .nav-list {
@@ -73,6 +74,7 @@
 }
 
 .butao {
+    justify-self: end;
     width: 4rem;
     height: 2rem;
     border: 2px solid #000;
@@ -109,3 +111,17 @@
 
     }
 }
+
+
+@media screen and (max-width: 700px) {
+    .header{
+        flex-wrap: wrap;
+    }
+
+    .butao{
+        justify-self: end;
+        position: absolute;
+        right: 10px;
+        top: 20px;
+    }
+  }
