@@ -124,4 +124,11 @@
         right: 10px;
         top: 20px;
     }
+
+    .active{
+
+        &::before{
+            left: 2.1rem;
+        }
+    }
   }
