@@ -403,7 +403,8 @@ footer article p a:hover {
   color: #fff;
 }
 .home .caixinha-home .home-button:first-child:hover {
-  background-color: #181818;
+  background-color: #fff;
+  color: #000;
 }
 .home .caixinha-home .home-button:hover {
   background-color: #181818;

@@ -4,209 +4,166 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Smokey Devs</title>
-    <link rel="stylesheet" href="./dist/css/reset.css">
-    <link rel="stylesheet" href="./dist/css/style.css">
-    <script src="https://kit.fontawesome.com/a3a5d372e6.js" crossorigin="anonymous"></script>
+    <title>SmokeyDevs Remake</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
 
-<body>
-    <header class="header">
-        <a href="#home"><img src="./dist/img/logowhite.png" alt="Logo-SDR" class="logo"></a>
-        <nav class="nav">
-            <ul class="nav-list">
-                <li class="nav-item"><a href="#home">Início Rápido</a></li>
-                <li class="nav-item"><a href="#infos">Como Trabalhamos</a></li>
-                <li class="nav-item"><a href="#services">Nossos Projetos</a></li>
-            </ul>
-        </nav>
-        <div class="theme-button themeToggle">
-            <div class="circle"></div>
+<body class="bg-gray-50 text-gray-800">
+
+    <header class="bg-white shadow fixed top-0 left-0 w-full z-50 transition-all duration-500 ease-in-out">
+        <div class="max-w-7xl mx-auto flex justify-between items-center max-h-24">
+            <img src="./dist/img/logowhite.png" alt="logo" class="max-w-32 ">
+            <nav class="space-x-6 hidden md:block">
+                <a href="#" class="text-gray-700 hover:text-blue-600 transition duration-300">Início</a>
+                <a href="#projetos" class="text-gray-700 hover:text-blue-600 transition duration-300">Projetos</a>
+                <a href="#contato" class="text-gray-700 hover:text-blue-600 transition duration-300">Contato</a>
+            </nav>
+
+            <button id="menu-toggle" class="md:hidden text-gray-700 transition duration-300 hover:scale-110">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+            <a href="#" class="block py-2 text-gray-700 hover:text-blue-600">Início</a>
+            <a href="#projetos" class="block py-2 text-gray-700 hover:text-blue-600">Projetos</a>
+            <a href="#contato" class="block py-2 text-gray-700 hover:text-blue-600">Contato</a>
         </div>
     </header>
-    <main class="main">
-        <section class="home" id="home">
-            <h1 class="home-title bebasneue">Desenvolvimento de Sistemas Sob Medida para Você</h1>
-            <p class="home-description">Bem-vindo ao nosso site, onde transformamos suas ideias em soluções digitais inovadoras. Descubra como nossas ofertas personalizadas podem impulsionar o seu negócio</p>
-            <div class="caixinha-home">
-                <a href="#services" class="home-button">Saiba Mais</a>
-                <a href="https://wa.link/jet6y2" target="_blank" class="home-button">Contato</a>
-            </div>
-        </section>
-        <section class="projetos" id="services">
-            <div class="texts">
-                <h1 class="projects-title">Projetos</h1>
-                <h2 class="projects-subtitle">Desenvolvimento de Sistemas Sob Medida</h2>
-                <p class="projects-description">Oferecemos serviços de desenvolvimento de sistemas personalizados que
-                    atendem às necessidades especificas de cada cliente. Nossa equipe é especializada em riar soluções
-                    tecnológicas inovadoras e eficientes.</p>
-            </div>
-            <ul class="projects">
-                <li class="project-item">
-                    <a href="https://corserius.vercel.app/"><i class="fa-solid fa-cube cube"></i></a>
-                    <p class="title">Projeto Corserius</p>
-                    <p class="info">Site feito para uma marca de loja de roupas moderna e sofisticada,
-                        com intuito do site ser minimalista e moderno
-                    </p>
-                </li>
-            </ul>
-            <a href="#" class="projects-buttom border">Saiba Mais</a>
-            <a href="#" class="projects-buttom back-border">Contato</a>
-        </section>
-        <section class="infos" id="infos">
-            <h1 class="infos-title">Entenda como desenvolvemos sistemas sob medida para suas necessidades.</h1>
-            <h3 class="infos-subtitle">Nosso processo de desenvolvimento é colaborativo e ágil. Trabalhamos em
-                estreita parceria com nossos clientes para entender suas necessidades e objetivos. Cada etapa é
-                cuidadosamente planejada para garantir resultados de alta qualidade.</h3>
-            <ul class="infosUl">
-                <li class="infos-item">
-                    <i class="fa-solid fa-cube cube"></i>
-                    <h3>Fases do nosso processo de desenvolvimento de sistemas</h3>
-                    <p>Desde a concepção até a entrega, cada fase é essencial</p>
-                    <a href="#">Saiba</a>
-                </li>
-                <li class="infos-item">
-                    <i class="fa-solid fa-cube cube"></i>
-                    <h3>Tecnologia e inovação a serviço do seu projeto</h3>
-                    <p>Utilizamos as mais recentes tecnologias para garantir eficiência e eficácia.</p>
-                    <a href="#">Explore</a>
-                </li>
-                <li class="infos-item">
-                    <i class="fa-solid fa-cube cube"></i>
-                    <h3>Nosso compromisso com a qualidade e a satisfação do cliente</h3>
-                    <p>Acreditamos que o sucesso do projeto depende da satisfação do cliente.</p>
-                    <a href="#">Contate</a>
-                </li>
-            </ul>
-        </section>
-        <section class="team">
-            <img src="./dist/img/logowhite.png" alt="Logo-SDR" class="logoCorserius">
 
-            <h1 class="teamTitle">Nossa Equipe</h1>
-            <h2>Conheça os profissionais que fazem a diferença</h2>
+    <div class="h-[80px]"></div>
 
-            <ul class="teamUl">
-                <li class="teamCard">
-                    <img src="/dist/img/torsani.jpeg" alt="mtsxw_" srcset="" class="teamImg">
-                    <p class="teamNome">Matheus Torsani</p>
-                    <p>Gerente, Tech Soluctions, Front End</p>
-                    <ul>
-                        <li>
-                            <i class="fa-brands fa-linkedin"></i>
-                            <i class="fa-brands fa-square-github"></i>
-                            <i class="fa-brands fa-square-instagram"></i>
-                        </li>
-                    </ul>
-                </li>
-                <li class="teamCard">
-                    <img src="/dist/img/otavio.jpeg" alt="Otavio" class="teamImg">
-                    <h3 class="teamNome">Otavio Andrigo</h3>
-                    <p>Desenvolvedor Front-End / UX / Designer / Analista</p>
-                    
-                    </p>
-                    <ul>
-                        <li>
-                            <i class="fa-brands fa-linkedin"></i>
-                            <i class="fa-brands fa-square-github"></i>
-                            <i class="fa-brands fa-square-instagram"></i>
-                        </li>
-                    </ul>
-                </li>
-                <li class="teamCard">
-                    <img src="/dist/img/sabotage.jpeg" alt="Heitor" class="teamImg">
-                    <h3 class="teamNome">Heitor</h3>
-                    <p>Desenvolvedor de Banco de Dados</p>
-                   
-                    <ul>
-                        <li>
-                            <i class="fa-brands fa-linkedin"></i>
-                            <i class="fa-brands fa-square-github"></i>
-                            <i class="fa-brands fa-square-instagram"></i>
-                        </li>
-                    </ul>
-                </li>
-                <li class="teamCard">
-                    <img src="/dist/img/joao.jpeg" alt="JoãoVictor" class="teamImg">
-                    <h3 class="teamNome">João Victor</h3>
-                    <p>Desenvolvedor de Banco de Dados</p>
-    
-                    <ul>
-                        <li>
-                            <i class="fa-brands fa-linkedin"></i>
-                            <i class="fa-brands fa-square-github"></i>
-                            <i class="fa-brands fa-square-instagram"></i>
-                        </li>
-                    </ul>
-                </li>
-                <li class="teamCard">
-                    <img src="/dist/img/rai.jpeg" alt="Raí Silva" class="teamImg">
-                    <h3 class="teamNome">Raí</h3>
-                    <p>Desenvolvedor Backend</p>
-                    
-                    <ul>
-                        <li>
-                            <i class="fa-brands fa-linkedin"></i>
-                            <i class="fa-brands fa-square-github"></i>
-                            <i class="fa-brands fa-square-instagram"></i>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-        </section>
-        <section class="jobs">
-            <article class="jobsContainer">
-                <h1>Estamos contratando!</h1>
-                <h2>Se você é um desenvolvedor apaixonado por tecnologia e inovação, venha fazer parte da nossa equipe!
-                </h2>
-                <a href="#" class="jobsBtn">Vagas Abertas</a>
-            </article>
-        </section>
-        <section class="contact">
-            <h1>Entre em contato conosco</h1>
-            <h2>Solicite uma cotação personalizada e descubra como podemos ajudar a transformar seu projeto.</h2>
-            <div>
-                <a class="border" href="#">Solicitar</a>
-                <a class="back-border" href="#">Contatar</a>
+    <!-- Hero Section -->
+    <section class="relative bg-black text-white">
+        <img src="https://i.pinimg.com/736x/30/8f/2f/308f2fd627c36e007527bc50337f6c7b.jpg" alt="Banner"
+            class="w-full h-[550px] object-cover opacity-30">
+        <div class="absolute top-0 left-0 w-full h-full flex flex-col items-center justify-center text-center px-4">
+            <h1 class="text-4xl md:text-5xl font-extrabold mb-4">Sistemas Sob Medida para Você</h1>
+            <p class="max-w-xl text-lg mb-6">Transformamos suas ideias em soluções digitais inovadoras com tecnologia de
+                ponta.</p>
+            <div class="space-x-4">
+                <a href="#projetos"
+                    class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold">Saiba Mais</a>
+                <a href="#contato" class="bg-gray-100 text-black px-6 py-3 rounded-lg font-semibold">Contato</a>
             </div>
-        </section>
-    </main>
-    <footer>
-        <img src="./dist/img/logowhite.png" alt="Logo-SDR" class="logo">
-        <ul>
-            <li><a href="#home">Início</a></li>
-        </ul>
-        <ul>
-            <li><a href="#infos">Sobre Nós</a></li>
-        </ul>
-        <ul>
-            <li><a href="#services">Nossos Serviços</a></li>
-        </ul>
-        <ul class="icones">
-            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-            <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
-            <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
-            <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
-            <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
-        </ul>
-        <article>
-            <h4>Inscreva-se</h4>
-            <p>Junte-se à nossa newsletter para ficar atualizado sobre recursos e lançamentos.</p>
-            <form>
-                <input type="email" placeholder="Digite seu E-mail" required>
-                <button type="submit">Inscrever-se</button>
-            </form>
-            <p>Ao se inscrever, você concorda com nossos <a href="#">Termos de Serviço</a> e <a href="#">Política de
-                    Privacidade</a>.</p>
-        </article>
-    </footer>
-    <div class="after-footer">
-        <div class="texts">
-            <p>&copy; 2025 SmokeyDevs Remake. Todos os direitos reservados.</p>
-            <a href="#">Política de Privacidade</a>
-            <a href="#">Termos de Serviço</a>
-            <a href="#">Configurações de Cookies.</a>
         </div>
-    </div>
+    </section>
+
+    <!-- Projetos -->
+    <section id="projetos" class="py-16 bg-white text-center">
+        <h2 class="text-3xl font-bold mb-4">Projetos</h2>
+        <p class="max-w-2xl mx-auto mb-10">Desenvolvemos sistemas personalizados que atendem as necessidades específicas
+            de cada cliente.</p>
+        <div class="bg-gray-100 rounded-lg p-6 max-w-xl mx-auto">
+            <h3 class="text-xl font-semibold mb-2">Projeto Corserius</h3>
+            <p>Site feito para uma marca de roupa com foco minimalista e moderno.</p>
+        </div>
+    </section>
+
+    <!-- Processo -->
+    <section class="py-16 bg-gray-50">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold">Como Trabalhamos</h2>
+            <p class="mt-2 text-gray-600">Entenda o nosso processo e como entregamos qualidade</p>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto px-4">
+            <div class="bg-white p-6 rounded-lg shadow">
+                <h4 class="font-semibold text-lg mb-2">Planejamento e Concepção</h4>
+                <p>Entendemos a sua ideia e estruturamos as etapas do projeto.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow">
+                <h4 class="font-semibold text-lg mb-2">Tecnologia e Inovação</h4>
+                <p>Usamos as melhores tecnologias para eficiência e desempenho.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow">
+                <h4 class="font-semibold text-lg mb-2">Qualidade e Entrega</h4>
+                <p>Garantimos que tudo será entregue com excelência e suporte.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Equipe -->
+    <section class="py-16 bg-white">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold">Nossa Equipe</h2>
+            <p class="text-gray-600">Conheça os profissionais que fazem a diferença</p>
+        </div>
+        <div class="grid md:grid-cols-5 gap-6 px-4 max-w-6xl mx-auto">
+            <!-- Exemplo de Card -->
+            <div class="bg-gray-100 p-4 rounded-lg text-center">
+                <img src="./dist/img/torsani.jpeg" alt="Foto" class="imagemzona mx-auto rounded-full mb-3">
+                <h4 class="font-semibold">Matheus Torsani</h4>
+                <p class="text-sm text-gray-600">Gerente, Backend</p>
+            </div>
+            <!-- Adicione os outros membros nos mesmos moldes -->
+            <div class="bg-gray-100 p-4 rounded-lg text-center">
+                <img src="./dist/img/otavio.jpeg" alt="Foto" class=" imagemzona mx-auto rounded-full mb-3">
+                <h4 class="font-semibold">Matheus Toriani</h4>
+                <p class="text-sm text-gray-600">Gerente, Backend</p>
+            </div>
+            <div class="bg-gray-100 p-4 rounded-lg text-center">
+                <img src="./dist/img/joao.jpeg" alt="Foto" class="imagemzona mx-auto rounded-full mb-3">
+                <h4 class="font-semibold">Matheus Toriani</h4>
+                <p class="text-sm text-gray-600">Gerente, Backend</p>
+            </div>
+            <div class="bg-gray-100 p-4 rounded-lg text-center">
+                <img src="./dist/img/rai.jpeg" alt="Foto" class="imagemzona mx-auto rounded-full mb-3">
+                <h4 class="font-semibold">Matheus Toriani</h4>
+                <p class="text-sm text-gray-600">Gerente, Backend</p>
+            </div>
+            <div class="bg-gray-100 p-4 rounded-lg text-center">
+                <img src="./dist/img/sabotage.jpeg" alt="Foto" class="imagemzona mx-auto rounded-full mb-3">
+                <h4 class="font-semibold">Matheus Toriani</h4>
+                <p class="text-sm text-gray-600">Gerente, Backend</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vagas -->
+    <section class="py-16 bg-gray-800 text-white text-center">
+        <h2 class="text-2xl font-bold mb-4">Estamos contratando!</h2>
+        <p class="mb-6">Se você é apaixonado por tecnologia, venha fazer parte da nossa equipe.</p>
+        <a href="#" class="bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-lg font-semibold">Ver Vagas</a>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="py-16 bg-white text-center">
+        <h2 class="text-3xl font-bold mb-4">Entre em contato conosco</h2>
+        <p class="mb-8">Solicite um orçamento personalizado para o seu projeto.</p>
+        <form class="max-w-md mx-auto space-y-4">
+            <input type="text" placeholder="Seu nome" class="w-full border border-gray-300 px-4 py-2 rounded">
+            <input type="email" placeholder="Seu email" class="w-full border border-gray-300 px-4 py-2 rounded">
+            <textarea placeholder="Sua mensagem"
+                class="w-full border border-gray-300 px-4 py-2 rounded h-32"></textarea>
+            <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white text-sm py-6 text-center">
+        <p>&copy; 2025 SmokeyDevs Remake. Todos os direitos reservados.</p>
+    </footer>
 </body>
-<script src="/dist/js/script.js"></script>
+<script>
+    const toggleButton = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    toggleButton.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+    });
+</script>
+
 </html>
